@@ -1,4 +1,9 @@
+:root {
+    --main-color: #00D36D;
+}
+
 html {
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -9,6 +14,7 @@ html {
 }
 
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Rubik", "Arial", sans-serif;
@@ -40,6 +46,8 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+
+/* HEADER */
 
 .garpix-header {
     padding-top: 18px;
@@ -106,25 +114,88 @@ img {
 .garpix-header-left-bottom {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-left-bottom-search {
     border: none;
     background: none;
-    margin-right: 20px;
 }
 
-.header-left-bottom-search:focus {
+.header-left-bottom-search img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.header-left-bottom-search:focus,
+.garpix-header-link:focus,
+.header-left-enter:focus {
     outline: none;
     box-shadow: 0 0 0 2px #ccc;
+    border-radius: 7px;
 }
 
 .header-left-enter {
     display: inline-block;
-    color: #00D36D;
+    color: var(--main-color);
     text-decoration: none;
     font-size: 14px;
-    border: 1px solid #00D36D;
+    border: 1px solid var(--main-color);
     border-radius: 7px;
     padding: 7px 27px;
+}
+
+/* MAIN */
+
+.garpix-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 70px;
+    padding-bottom: 160px;
+    background-color: #E5E5E5;
+}
+
+.invitation-section {
+    max-width: 882px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.invitation-heading {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.invitation-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.invitation-item {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.invitation-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #222222;
+}
+
+.invitation-link-active {
+    background-color: var(--main-color);
+    color: #ffffff;
 }
