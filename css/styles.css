@@ -11,9 +11,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.15;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #222;
 }
 
 img {
@@ -33,9 +34,102 @@ img {
 }
 
 .container {
-    max-width: 1148px;
+    max-width: 1218px;
     padding-left: 24px;
     padding-right: 24px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.garpix-header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.garpix-header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.garpix-header-logo {
+    display: block;
+    width: 180px;
+    height: 80px;
+}
+
+.garpix-header-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 749px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.garpix-header-item {
+    margin-right: 20px;
+    margin-bottom: 12px;
+}
+
+.garpix-header-link {
+    color: rgba(33, 33, 33, 0.5);
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.garpix-header-item-parteners .garpix-header-link {
+    color: #222;
+}
+
+/* .garpix-header-left {
+    display: flex;
+    flex-direction: column;
+} */
+
+.header-left-telegram {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 18px;
+}
+
+.header-left-telegram::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/telegram.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-right: 3px;
+}
+
+.garpix-header-left-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.header-left-bottom-search {
+    border: none;
+    background: none;
+    margin-right: 20px;
+}
+
+.header-left-bottom-search:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ccc;
+}
+
+.header-left-enter {
+    display: inline-block;
+    color: #00D36D;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #00D36D;
+    border-radius: 7px;
+    padding: 7px 27px;
 }
