@@ -287,7 +287,8 @@ img {
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .partners-list {
@@ -298,6 +299,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     margin-left: -20px;
+    margin-bottom: 30px;
 }
 
 .partners-item {
@@ -320,4 +322,36 @@ img {
     font-weight: 500;
     font-size: 24px;
     color: #222;
+}
+
+.partners-item-text {
+    margin-top: 0;
+    margin-bottom: 27px;
+}
+
+.partners-wrapper {
+    text-align: center;
+}
+
+.partners-wrapper img {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 35px;
+}
+
+.partners-item-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(34, 34, 34, 0.5);
+    margin: 0;
+}
+
+.green-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    background-color: var(--main-color);
 }
