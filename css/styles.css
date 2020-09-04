@@ -154,7 +154,7 @@ img {
     flex-grow: 1;
     padding-top: 70px;
     padding-bottom: 160px;
-    background-color: #E5E5E5;
+    background-color: #F2F4F7;
 }
 
 .invitation-section {
@@ -179,6 +179,7 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 22px;
 }
 
 .invitation-item {
@@ -198,4 +199,77 @@ img {
 .invitation-link-active {
     background-color: var(--main-color);
     color: #ffffff;
+}
+
+/* Checkbox */
+
+.invitation-checkbox {
+    max-width: 321px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.invitation-label {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 24px;
+}
+
+.invitation-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    border: 1px solid #E4E6E9;
+    border-radius: 12px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 2px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.invitation-input:checked + .slider {
+    background-color: var(--main-color);
+}
+
+.invitation-input:checked + .slider::before {
+    background-color:#ffffff;
+}
+
+.invitation-input:focus + .slider {
+    box-shadow: 0 0 1px var(--main-color);
+}
+
+.invitation-input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.accepting-thanks {
+    color: var(--main-color);
 }
