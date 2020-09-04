@@ -287,7 +287,7 @@ img {
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -370,4 +370,104 @@ img {
 .green-btn:focus {
     outline: none;
     box-shadow: 0 0 10px 2px var(--main-color);
+}
+
+/* Electronics section */
+
+.electronics-section {
+    max-width: 1171px;
+    margin: 0 auto 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.electronics-heading {
+    max-width: 715px;
+    margin: 0 auto 40px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.electronics-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: 30px;
+}
+
+.electronics-item {
+    width: 377px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.electroics-link {
+    text-decoration: none;
+    color: rgba(34, 34, 34, 0.5);
+}
+
+.electronic-item-content {
+    position: relative;
+    z-index: 1;
+    padding-left: 65px;
+    text-align-last: left;
+}
+
+.electronic-item-content::before {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    content: "";
+}
+
+.electronics-item:nth-child(1) .electronic-item-content::before {
+    background-image: url("../images/partner-technopark.jpg");
+}
+
+.electronics-item:nth-child(2) .electronic-item-content::before {
+    background-image: url("../images/partner-euroset.jpg");
+}
+
+.electronics-item:nth-child(3) .electronic-item-content::before {
+    background-image: url("../images/partner-mvideo.jpg");
+}
+
+.electronics-partner-name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.electronics-partner-sale {
+    line-height: 130%;
+    color: #222;
+    margin: 0;
+}
+
+.electronics-item-img {
+    display: block;
+    width: 377px;
+    height: 236px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1170px) {
+    .electronics-list {
+        flex-wrap: nowrap;
+    }
 }
