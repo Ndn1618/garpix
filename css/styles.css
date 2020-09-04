@@ -207,16 +207,16 @@ img {
     max-width: 321px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .invitation-label {
     position: relative;
     display: inline-block;
-    width: 58px;
-    height: 24px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .invitation-input {
@@ -226,12 +226,11 @@ img {
 }
 
 .slider {
-    position: absolute;
+    width: 58px;
+    height: 24px;
+    position: relative;
+    z-index: 1;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: #ffffff;
     border: 1px solid #E4E6E9;
     border-radius: 12px;
@@ -268,6 +267,10 @@ img {
     -webkit-transform: translateX(18px);
     -ms-transform: translateX(18px);
     transform: translateX(18px);
+}
+
+.ignoring-thanks {
+    order: -1;
 }
 
 .accepting-thanks {
