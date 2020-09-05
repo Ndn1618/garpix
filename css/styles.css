@@ -478,14 +478,19 @@ img {
 /* Sales section */
 
 .sales-section {
-    max-width: 690px;
+    max-width: 880px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
     text-align: center;
 }
 
-.sales-top-list {
+.sales-top-wrapper,
+.sales-main-wrapper {
+    margin-bottom: 55px;
+}
+
+.sales-list {
     margin: 0;
     list-style-type: none;
     display: inline-flex;
@@ -496,18 +501,18 @@ img {
     padding: 19px;
 }
 
-.sales-top-item:not(:last-child) {
+.sales-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.sales-top-img {
+.sales-img {
     display: inline-block;
     width: 120px;
     height: 120px;
     border-radius: 50%;
 }
 
-.sales-top-text {
+.sales-text {
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -516,8 +521,8 @@ img {
     background-color: #fff;
 }
 
-.sales-top-text::before,
-.sales-top-text::after {
+.sales-text::before,
+.sales-text::after {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -529,17 +534,17 @@ img {
     content: "";
 }
 
-.sales-top-text::before {
+.sales-text::before {
     left: 0;
     transform: translate(-50%, 0);
 }
 
-.sales-top-text::after {
+.sales-text::after {
     right: 0;
     transform: translate(50%, 0);
 }
 
-.sales-top-text  span {
+.sales-text  span {
     display: block;
     padding: 10px 25px;
     margin-bottom: -20px;
@@ -548,4 +553,10 @@ img {
     line-height: 20px;
     background-color: #fff;
     border-radius: 0 0 40px 40px;
+}
+
+.sales-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
