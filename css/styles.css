@@ -471,3 +471,78 @@ img {
         flex-wrap: nowrap;
     }
 }
+
+/* Sales section */
+
+.sales-section {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.sales-top-list {
+    margin: 0;
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 79px;
+    overflow: hidden;
+    padding: 19px;
+}
+
+.sales-top-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.sales-top-img {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.sales-top-text {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 29px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.sales-top-text::before,
+.sales-top-text::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #F2F4F7;
+    border-radius: 50%;
+    content: "";
+}
+
+.sales-top-text::before {
+    left: 0;
+    transform: translate(-50%, 0);
+}
+
+.sales-top-text::after {
+    right: 0;
+    transform: translate(50%, 0);
+}
+
+.sales-top-text  span {
+    display: block;
+    padding: 10px 25px;
+    margin-bottom: -20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #fff;
+    border-radius: 0 0 40px 40px;
+}
