@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +45,7 @@
                         <a class="garpix-header-link" href="#">Партнеры</a>
                     </li>
                 </ul>
-                
+
                 <div class="garpix-header-left">
                     <a class="garpix-header-link header-left-telegram" target="_blank" href="https://t.me/Ndn_ndn">Санкт-Петербург</a>
                     <div class="garpix-header-left-bottom">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </header> <!-- garpix-header -->
-    
+
     <main class="garpix-main">
         <div class="container">
             <section class="invitation-section">
@@ -98,8 +98,8 @@
                         </a>
                     </li>
                 </ul>
-                
-                <div class="invitation-checkbox">
+
+                <!-- <div class="invitation-checkbox">
                     <label class="invitation-label" for="invitation-input">
                         <div class="checkbox-wrapper">
                             <input class="invitation-input" type="checkbox" id="invitation-input">
@@ -108,9 +108,25 @@
                             <span class="accepting-thanks">Принимают спасибо</span>
                         </div>
                     </label>
-                </div>
+                </div> -->
+
+                <form class="invitation-radio-form" method="GET" action="https://echo.htmlacademy.ru">
+                    <!-- Actual radios -->
+                    <input type="radio" name="give_get" id="give-radio" value="give">
+                    <input type="radio" name="give_get" id="get-radio" value="get">
+
+                    <!-- Labels for radios -->
+                    <label class="invitation-radio-label" for="give-radio">Начисляют спасибо</label>
+                    <label class="invitation-radio-label" for="get-radio">Принимают спасибо</label>
+
+                    <div class="radio-contoller">
+                        <label class="invitation-radio-label" for="give-radio">Начисляют спасибо</label>
+                        <label class="invitation-radio-label" for="get-radio">Принимают спасибо</label>
+                    </div>
+                    <button class="visually-hidden" type="submit">Topshirish</button>
+                </form>
             </section> <!--invitation-section -->
-            
+
             <section class="partners-section">
                 <ul class="partners-list">
                     <li class="partners-item">
@@ -166,7 +182,7 @@
                 </ul>
                 <button class="green-btn">Еще 4 партнера</button>
             </section> <!-- partners-section -->
-            
+
             <section class="electronics-section">
                 <h2 class="electronics-heading">3 предложения в категории «Электроника и бытовая техника»</h2>
                 <ul class="electronics-list">
@@ -200,7 +216,7 @@
                 </ul>
                 <button class="green-btn">Еще 4 предложения</button>
             </section> <!-- electronics-section -->
-            
+
             <section class="sales-section">
                 <div class="sales-top-wrapper">
                     <ul class="sales-list">
@@ -234,7 +250,7 @@
                         <span>Скидки за бонусы</span>
                     </div>
                 </div> <!-- sales-top-wrapper -->
-                
+
                 <div class="sales-main-wrapper">
                     <div class="sales-main-left">
                         <ul class="sales-list">
@@ -258,7 +274,7 @@
                             <span>Скидки за бонусы</span>
                         </div>
                     </div>
-                    
+
                     <div class="sales-main-right">
                         <ul class="sales-list">
                             <li class="sales-item">
@@ -282,7 +298,7 @@
                         </div>
                     </div>
                 </div> <!-- sales-main-wrapper -->
-                
+
                 <div class="sales-bottom-wrapper">
                     <ul class="sales-list">
                         <li class="sales-item">

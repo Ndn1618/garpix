@@ -211,7 +211,7 @@ img {
     color: #ffffff;
 }
 
-/* Checkbox */
+/* Checkbox
 
 .invitation-checkbox {
     max-width: 321px;
@@ -285,6 +285,14 @@ img {
 
 .accepting-thanks {
     color: var(--main-color);
+} */
+
+/* Radio */
+
+.invitation-radio-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Partners Section */
