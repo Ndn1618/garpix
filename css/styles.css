@@ -193,12 +193,17 @@ img {
 }
 
 .invitation-link {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     padding: 8px 16px;
     background-color: #ffffff;
     border-radius: 8px;
     color: #222222;
+    transition: box-shadow 0.3s ease;
+}
+
+.invitation-link:hover {
+    box-shadow: inset 0 0 0 2px var(--main-color);
 }
 
 .invitation-link-active {
